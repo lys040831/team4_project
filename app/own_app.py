@@ -24,13 +24,16 @@ class OwnApp:
             self.menu_manager.show_main_menu()
             menu = self.menu_manager.input_menu()
             if menu == "1":
-                result = OwnGame1().play()
+                game = OwnGame1()
+                result = game.play()
                 self.record_manager.add_record(self.player_name, result)
             elif menu == "2":
-                result = OwnGame2().play()
+                game = OwnGame2()
+                result = game.play()
                 self.record_manager.add_record(self.player_name, result)
             elif menu == "3":
-                result = OwnGame3().play()
+                game = OwnGame3()
+                result = game.play()
                 self.record_manager.add_record(self.player_name, result)
             elif menu == "4":
                 self.record_manager.show_records()
