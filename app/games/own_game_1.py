@@ -115,7 +115,7 @@ def play_quiz(quiz, score):
     print(f"\n현재 점수 : {score}")
 
     return score
-
+#dd
 #  첫번째 게임-ox퀴즈 함수
 def game_1():
 
