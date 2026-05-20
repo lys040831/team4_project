@@ -144,7 +144,8 @@ class OwnGame3:
                     print("중간 종료를 선택했습니다.")
                     break
         self.show_final_result()
-        return [GAME_TITLE, self.get_score(), self.get_total_return()]
+        result_text = self.get_grade() + " / 총 수익률: " + str(self.get_total_return()) + "%"
+        return [GAME_TITLE, self.get_score(), result_text]
 
 def play():
     return OwnGame3().play()[1]

@@ -14,19 +14,15 @@ class OwnApp:
     def start(self):
         print("===== 디지털 투자 안전 훈련소 =====")
         self.player_name = input("닉네임을 입력하세요: ")
-
         if self.player_name == "":
             self.player_name = "사용자"
-
         print(self.player_name + "님, 환영합니다.")
 
     def run(self):
         self.start()
-
         while True:
             self.menu_manager.show_main_menu()
             menu = self.menu_manager.input_menu()
-
             if menu == "1":
                 game = OwnGame1()
                 result = game.play()
